@@ -2,10 +2,10 @@
 const mysql = require('mysql');
 
 const mysqlConnection = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: 'password',
-    database: 'todoapp'
+    host: 'us-cdbr-east-05.cleardb.net',
+    user: 'bb2cfd37a2a0bd',
+    password: '34ef705e',
+    database: 'heroku_e985aba1ccfc973'
 });
 
 mysqlConnection.connect(function (err) {
