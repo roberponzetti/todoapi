@@ -15,7 +15,7 @@ const query = `
 router.get('/', (req,res) => {
     mysqlConnection.query('SELECT * FROM todoitems', (err,  rows, fields) => {
         if(!err){
-            res.json(rows);
+            res.send(rows);
         }else{
             console.log(err);
         }
